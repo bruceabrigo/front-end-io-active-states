@@ -1,0 +1,24 @@
+* {
+    margin: 5px;
+}
+body {
+    font-family: 'Epilogue', sans-serif;
+    background-color: hsl(0, 0%, 98%);
+}
+.navbar {
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+}
+.links, .user {
+    display: flex;
+}
+.user {
+    margin-left: auto;
+}
+li {
+    list-style: none;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
