@@ -16,32 +16,50 @@
 </head>
 <body>
     <div class="navbar">
-        <nav class="title">
+        <nav class="nav-title">
             <h1>snap</h1>
         </nav>
         <ul class="links">
-            <li>Features</li>
-            <li>Company</li>
+            <li onclick="dropdown()" class="dropbtn">Features</li>
+                <div class="dropdown-content" id="myDropdown">
+                    <a href="#">Todo list</a>
+                    <a href="#">Calendar</a>
+                    <a href="#">Reminders</a>
+                    <a href="#">Planning</a>
+                </div>
+            <li onclick="dropdown()" class="companybtn">Company</li>
+                <div class="dropdown-content" id="companyInfo">
+                    <a href="#">History</a>
+                    <a href="#">Our Team</a>
+                    <a href="#">Blog</a>
+                </div>
             <li>Careers</li>
             <li>About</li>
         </ul>
         <ul class="user">
             <li>Login</li>
-            <li>Register</li>
+            <li class="register">Register</li>
         </ul>
     </div>
+        <div class="hero">
+            <div class="left">
+                <h2 class="hero-title">
+                    Make <br> remote work
+                </h2>
+                <p class="hero-desc">
+                    Get your team in sync, no matter your location. Streamline processes, 
+                    create team rituals, and watch productivity soar.
+                </p>
+                <button class="learn-more">Learn More</button>
+            </div>
+            <div class="right">
+                <img class="hero-image" src="images/image-hero-desktop.png" alt="hero-image-desktop">
+            </div>
+        </div>
     
-        Make remote work
-    
-        Get your team in sync, no matter your location. Streamline processes, 
-        create team rituals, and watch productivity soar.
-    
-        Learn more
-
-
     <div class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-        Coded by <a href="#">Your Name Here</a>.
+        Coded by <a href="#">Bruce Abrigo</a>.
     </div>
 
   <script src="app.js"></script>

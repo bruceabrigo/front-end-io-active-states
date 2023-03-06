@@ -9,9 +9,23 @@ body {
     display: flex;
     flex-flow: wrap;
     align-items: center;
+    margin: 10px;
+}
+.nav-title {
+    font-size: 20px;
 }
 .links, .user {
+    gap: 25px;
     display: flex;
+    font: 18px;
+    color: hsl(0, 0%, 41%);
+}
+li:hover {
+    color: hsl(0, 0%, 8%);
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
 }
 .user {
     margin-left: auto;
@@ -19,6 +33,107 @@ body {
 li {
     list-style: none;
 }
+.hero {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 25px;
+}
+.hero-image {
+    height: 70vh;
+}
+.hero-title {
+    font-size: 75px;
+}
+.left {
+    width: 50%;
+    margin: auto;
+    padding-left: 125px;
+}
+.right {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin: auto;
+    font-size: 18px;
+}
+.learn-more {
+    margin-top: 25px;
+    padding: 15px;
+    font-size: 18px;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 15px;
+    width: 150px;
+    color: white;
+    font-family: 'Epilogue', sans-serif;
+    cursor: pointer;
+}
+.hero-desc {
+    width: 450px;
+}
+.learn-more:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+p {
+    color: hsl(0, 0%, 41%);
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+.dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
 
-.attribution { font-size: 11px; text-align: center; }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top: 40px;
+    border-radius: 15px;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .show {
+    display: block;
+  }
+  
 .attribution a { color: hsl(228, 45%, 44%); }
